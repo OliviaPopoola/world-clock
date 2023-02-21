@@ -1,7 +1,12 @@
+:root {
+  --primary-font: "Manrope", sans-serif;
+}
 body {
   background-color: palevioletred;
   color: aliceblue;
+  font-family: var(--primary-font);
 }
+
 h1 {
   text-align: center;
 }
