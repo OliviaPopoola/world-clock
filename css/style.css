@@ -2,11 +2,56 @@
   --primary-font: "Manrope", sans-serif;
 }
 body {
-  background-color: palevioletred;
+  background-color: rgba(237, 182, 200, 0.5);
   color: aliceblue;
   font-family: var(--primary-font);
 }
 
 h1 {
   text-align: center;
+  font-size: 60px;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+select {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 4px;
+}
+footer {
+  text-align: center;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px dashed rgb(128, 128, 128, 0.4);
+}
+.city:last-child {
+  border: none;
+}
+.date {
+  opacity: 0.5;
+}
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 24px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+.container {
+  max-width: 1200px;
+  margin: 60px auto;
+  background-color: rgb(145, 186, 186);
+  padding: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
 }
