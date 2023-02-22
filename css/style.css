@@ -1,9 +1,13 @@
 :root {
   --primary-font: "Manrope", sans-serif;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --container-color: rgba(183, 183, 138, 0.7);
+  --body-color: rgb(221, 221, 221);
+  --font-color: rgb(60, 98, 85);
 }
 body {
-  background-color: rgba(237, 182, 200, 0.5);
-  color: aliceblue;
+  background-color: var(--body-color);
+  color: var(--font-color);
   font-family: var(--primary-font);
 }
 
@@ -13,14 +17,17 @@ h1 {
 }
 h2 {
   margin: 0 0 5px;
-  font-size: 28px;
+  font-size: 38px;
 }
 select {
   font-size: 18px;
+  text-align: center;
+  font-family: var(--primary-font);
   display: block;
   width: 100%;
   padding: 10px;
-  border: 4px;
+  border: 2px solid var(--font-color);
+  background-color: var(--body-color);
 }
 footer {
   text-align: center;
@@ -50,8 +57,23 @@ footer {
 .container {
   max-width: 1200px;
   margin: 60px auto;
-  background-color: rgb(145, 186, 186);
+  background-color: var(--container-color);
   padding: 40px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: var(--box-shadow);
   border-radius: 10px;
+}
+.social-footer {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.social-footer a {
+  margin: 0 20px;
+  color: var(--font-color);
+  background-color: rgb(255, 255, 255, 0.4);
+  padding: 10px 14px;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: all 10ms ease-in-out;
 }
