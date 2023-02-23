@@ -36,7 +36,7 @@ function updateTime() {
   //   Color changing theme from 8pm - 6am
   let mainElement = document.querySelector(".container");
   let time = moment().format("HH");
-  if (time > "20" && time < "06") {
+  if (time > "20" || time < "06") {
     document.body.style.backgroundColor = "#181823";
     mainElement.style.backgroundColor = "#0A26478C";
   }
