@@ -25,6 +25,13 @@ function updateTime() {
   losAngelesTimeElement.innerHTML = losAngelesTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
+  //   Color changing theme
+  let mainElement = document.querySelector(".container");
+  let time = moment().format("HH");
+  if (time > "20") {
+    document.body.style.backgroundColor = "#181823";
+    mainElement.style.backgroundColor = "#0A26478C";
+  }
 }
 
 updateTime();
