@@ -77,3 +77,21 @@ footer {
   border-radius: 50%;
   transition: all 10ms ease-in-out;
 }
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .time {
+    font-size: 26px;
+  }
+  .time small {
+    font-size: 20px;
+  }
+  .date {
+    font-size: 12px;
+  }
+}
