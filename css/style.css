@@ -32,6 +32,15 @@ select {
 footer {
   text-align: center;
 }
+a,
+a:link {
+  text-decoration: none;
+  color: var(--font-color);
+}
+a:hover {
+  color: #757241;
+}
+
 .city {
   display: flex;
   justify-content: space-between;
